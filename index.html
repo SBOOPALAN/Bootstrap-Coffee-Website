@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop</title>
+
+  <!-- index css link -->
+  <link rel="stylesheet" href="./index.css" />
+  <!-- index css link -->
+
+
+  <!-- font awesome icons link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome icons link-->
+
+
+  <!--google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <!--google fonts link -->
+
+
+  <!-- bootstrap online css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- bootstrap online css  link -->
+
+</head>
+
+<body>
+
+
+  <!-- bootstrap online JS link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap online JS link -->
+
+
+
+  <div class="all-content">
+
+    <!--navbar Start-->
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo"><img src="./imges/logo.avif" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallary">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!--navbar end-->
+
+  <!--carousel start-->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imges/curosal1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button id="shop">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./imges/curosal2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button id="shop">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./imges/curosal3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button id="shop">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./imges/curosal4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button id="shop">Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--carousel end-->
+
+
+
+  <!--about section start-->
+
+  <section id="about">
+    <div class="container">
+
+      <div class="heading">About <span>Us</span></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="./imges/gift1.gif" alt="">
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <h3>What Makes Our coffee Special</h3>
+          <p>Cafe Patachou has such a friendly, congenial vibe that it has long been called a "student union for
+            adults." Owned by Martha Hoover, a four-time <br><br> James Beard Award semifinalist for outstanding
+            restaurateur, it has also been named among the nation's Top 10 breakfast spots by Bon Apetit. Its <br><br>
+            website design is sunny, colorful and full of food photography that captures the premium scratch cooking on
+            its menu. The website also features a robust <br><br> merchandise store that sells apparel, mugs, coffee and
+            the restaurant's signature cinnamon-sugar blend.</p>
+          <button id="about-btn">Learn More</button>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--about section end-->
+
+
+  <!--cards section start-->
+
+  <section id="top-cards">
+
+    <div class="heading2">Top <span>Categories</span></div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/top1.webp" alt="">
+          </div>
+        </div>
+
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/top2.webp" alt="">
+          </div>
+        </div>
+
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/top3.webp" alt="">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--cards section end-->
+
+
+  <!--menu section start-->
+
+  <section id="menu">
+
+    <div class="container">
+      <div class="heading3">Menu</div>
+    </div>
+
+    <div class="container" id="container2">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu1.jpg" alt="">
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Hot Brew</h3>
+              <p>$99<strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu2.jpg" alt="">
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Latte</h3>
+              <p>$95<strike>$110</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu3.jpg" alt="">
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Hot Teas</h3>
+              <p>$99 <strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu4.jpg" alt="">
+
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Matcha Latte</h3>
+              <p>$99 <strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="row" style="margin-top:30px;">
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu5.webp" alt="">
+
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Black tea</h3>
+              <p>$99<strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu6.webp" alt="">
+
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Green tea</h3>
+              <p>$99 <strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu7.webp" alt="">
+
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Light tea</h3>
+              <p>$99 <strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./imges/menu8.webp" alt="">
+
+
+            <div class="card-body">
+              <div class="star text-center">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3>Herbal tea</h3>
+              <p>$99 <strike>$100</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--menu section end-->
+
+
+  <!--product section start-->
+
+  <section id="product">
+
+    <div class="container">
+      <div class="heading4">Products</div>
+    </div>
+
+    <div class="container" id="container3">
+      <div class="row">
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod1.jpg" alt="">
+            <div class="card-body">
+              <h3>Arabic Coffee</h3>
+              <p>$120 <strike> $150</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod2.jpg" alt="">
+            <div class="card-body">
+              <h3>Cappuccino Coffee</h3>
+              <p>$250 <strike>$350</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod3.jpg" alt="">
+            <div class="card-body">
+              <h3>Black Coffee</h3>
+              <p>$130 <strike> $200</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod4.jpg" alt="">
+            <div class="card-body">
+              <h3>Lemon tea</h3>
+              <p>$120 <strike>$150</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod5.webp" alt="">
+            <div class="card-body">
+              <h3>Leaf tea</h3>
+              <p>$135 <strike>$150</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod6.webp" alt="">
+            <div class="card-body">
+              <h3>3Roses tea</h3>
+              <p>$110 <strike>$130</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod7.webp" alt="">
+            <div class="card-body">
+              <h3>Light Green tea</h3>
+              <p>$130 <strike>$160</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-3">
+          <div class="card">
+            <img src="./imges/prod8.webp" alt="">
+            <div class="card-body">
+              <h3>Special leaf tea</h3>
+              <p>$125 <strike>$140</strike> <span class="fa-solid fa-cart-shopping"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+
+  <!--product section end-->
+
+
+  <!--our gallary start-->
+
+  <div class="container" id="gallary">
+    <div class="heading5">Our <span>Gallary</span></div>
+
+    <div class="row" style="margin-top:30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./imges/gall1.webp" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./imges/gall2.webp" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./imges/gall3.webp" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="row" style="margin-top:30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./imges/gall4.webp" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./imges/gall5.webp" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./imges/gall6.webp" alt="">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!--our gallary end-->
+
+
+  <!--contact section start-->
+
+  <section id="contact">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-7">
+          <div class="heading6">Contact <span>Us</span></div>
+          <p>Do you love people and coffee? Are you an independent worker <br><br> with a positive attitude? We are
+            always accepting applications for our barista. </p>
+          <input type="text" class="form-control" placeholder="Name" aria-label="default input example"><br>
+          <input type="email" class="form-control" placeholder="Email" aria-label="default input example"><br>
+          <input type="number" class="form-control" placeholder="phone" aria-label="default input example"><br>
+          <button id="contact-btn">Send Message</button>
+        </div>
+
+        <div class="col-md-5" id="col">
+          <h1>Info</h1>
+          <p><i class="fa-regular fa-envelope"></i> bboobalan379@gmai.com</p>
+          <p><i class="fa-solid fa-phone"></i> +9566655083</p>
+          <p><i class="fa-solid fa-building-columns"> </i> State Bank of India </p>
+          <p>Every morning our bakers prepare fresh baked sweet and savory pies, scones, shortbread delights, and
+            bundles of joy before your eyes in our display bakery.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--contact section end-->
+
+
+  <!--blog section start-->
+
+  <section id="blogs">
+
+    <div class="heading7">Latest <span>Blogs</span></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 py-md-0">
+
+          <div class="card">
+            <img src="./imges/blog1.webp" alt="">
+            <div class="card-body">
+              <h3>India's Top 15 Artisanal Coffee Disruptors.</h3>
+              <h5>Admin / July 26, 2021</h5>
+              <p>The term third wave coffee originated sometime in the 1990s in the United States of American lovely
+                coffee....</p>
+              <button id="blog-btn">Read More.</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 py-md-0">
+
+          <div class="card">
+            <img src="./imges/blog2.webp" alt="">
+            <div class="card-body">
+              <h3>Cool Down With The New Cold Brew At Roastery.</h3>
+              <h5>Admin / August 21, 2021</h5>
+              <p>The Cold Brew at Roastery Coffee House has made a name for itself, not just in Kolkata, but acros...
+              </p>
+              <button id="blog-btn">Read More.</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 py-md-0">
+
+          <div class="card">
+            <img src="./imges/blog3.webp" alt="">
+            <div class="card-body">
+              <h3>Roastery Coffee House Kolkata What Brewing.</h3>
+              <h5>Admin / December 21, 2021</h5>
+              <p>Kolkata in recent years has seen a huge boom in the Café culture which seems to have permuted in...</p>
+              <button id="blog-btn">Read More.</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!--blog section end-->
+
+
+  <!--footer section start-->
+
+  <footer id="footer">
+    <div class="footer-logo text-center"><img src="./imges/logo.avif" alt=""></div>
+    <div class="social-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+
+    <div class="credits text-center">
+      Designed By <a href="#"> <span>S.Boobalan</span></a>
+    </div>
+
+    <div class="copyright text-center">
+      &copy;Copyright<strong><span>Coffee Shop</span></strong>.All Rights reserved
+    </div>
+
+  </footer>
+
+  <a href="#" class="arrow"><i><img src="./imges/uparrow 2.png" width="50px" alt=""></i></a>
+
+
+  <!--footer section end-->
+
+</body>
+
+</html>
